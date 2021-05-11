@@ -47,8 +47,8 @@ Every time you wish to run any of the scripts, please type the following command
 
 ```
 source cv101_marie/bin/activate # Activates virtual environment
-
 ```
+
 Now you can move to any script in the src folder and execute it:
 
 ```
@@ -57,7 +57,6 @@ Now you can move to any script in the src folder and execute it:
 cd src/1/ # Changing to src and assignment folder 
 
 python3 edge_detection.py # Run script
-
 ```
 
 
