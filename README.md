@@ -66,4 +66,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ## ❓ Questions and contact  
-To ask questions, please contact me on mariemortensen97@gmail.com.
+For questions and other inquiries, please contact me on mariemortensen97@gmail.com.
