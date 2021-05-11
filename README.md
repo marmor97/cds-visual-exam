@@ -5,10 +5,8 @@
 
 This portfolio consists of 4 projects - 3 class assignments made throughout the semester (number 1-3) and 1 self-assigned (number 4). 
 
-<details open>
-<summary> Assignment descriptions </summary>
-<br>
-    
+## Assignments
+
 | Assignment | Description|
 |--------|:-----------|
 | 1 | Canny edge detection using openCV |
