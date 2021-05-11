@@ -5,7 +5,7 @@
 This portfolio consists of 4 projects - 3 class assignments made throughout the semester (number 1-3) and 1 self-assigned (number 4). 
 
 <details open>
-<summary>A drop down menu!</summary>
+<summary> Assignment descriptions </summary>
 <br>
     
 | Assignment | Description|
