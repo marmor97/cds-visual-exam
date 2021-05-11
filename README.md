@@ -1,4 +1,5 @@
-## Exam portfolio for the subject Visual Analytics in Cultural Data Science on Aarhus University, 2021
+## Visual Analytics exam portfolio in Cultural Data Science on Aarhus University, 2021
+### Marie Damsgaard Mortensen
 
 ## Content
 
