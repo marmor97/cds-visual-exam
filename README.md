@@ -12,7 +12,7 @@ This portfolio consists of 4 projects - 3 class assignments made throughout the 
 | 1 | Canny edge detection using openCV |
 | 2 | Classifying digits with Neural Network and multinomial Logistic Regression |
 | 3 | Impressionist artist classification with fully-connected and pre-trained Neural Network |
-| 4 | Detecting architectural patterns with EfficientNet |
+| 4 | Detecting architectural patterns with ResNet50 |
     
 </details>
 
