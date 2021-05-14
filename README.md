@@ -51,7 +51,7 @@ git clone https://github.com/marmor97/cds-visual-exam # Clone repository to loca
 
 cd cds-visual-exam # Change directory to the repository folder
 
-bash ./create_lang_venv_win.sh
+bash ./create_vision_venv_win.sh
 ```
 
 
