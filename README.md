@@ -71,6 +71,14 @@ cd src/1/ # Changing to src and assignment folder
 python3 edge_detection.py # Run script
 ```
 
+To deactivate and remove the environment, the following commands need to be executed:
+```
+deactivate 
+
+bash kill_vision_venv.sh
+
+```
+
 
 ## License
 
