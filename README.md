@@ -27,6 +27,7 @@ To familiarize yourself with the structure of the repository, please see the tab
 | src | source code and main scripts |
 | out | results (e.g. learning curves, classification reports, plots) |
 | utils | utility functions used in the scripts |
+| examples | examples of pictures etc used in README's |
 
 
 ## 🔧 Setup
