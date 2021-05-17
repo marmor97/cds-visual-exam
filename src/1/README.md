@@ -7,7 +7,7 @@ In the script, you can use the original image or the data set from Kaggle contai
 
 Below is the image of Jefferson Memorial and afterwards, an example of a car license plate picture is given: 
 
-![Jefferson](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial.JPG)
+![Jefferson](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729.JPG)
 
 
 ![Arizona](../../examples/Alabama.jpg)
