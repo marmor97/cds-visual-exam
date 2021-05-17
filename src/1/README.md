@@ -7,8 +7,10 @@ In the script, you can use the original image or the data set from Kaggle contai
 
 Below is the image of Jefferson Memorial and afterwards, an example of a car license plate picture is given: 
 
-![](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial.JPG)
-![](../../examples/Alabama.jpg)
+![Jefferson](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial.JPG)
+
+
+![Arizona](../../examples/Alabama.jpg)
 
 #### Create Kaggle API:
 The picture We_Hold_These_Truths_at_Jefferson_Memorial.JPG is in the repository. However, before you can access the car license data, you will need to create a kaggle API following the instructions here https://github.com/Kaggle/kaggle-api#:~:text=To%20use%20the%20Kaggle%20API,file%20containing%20your%20API%20credentials. When you have created an API and have a kaggle.json file, upload the file to worker02 if you are working there and move to the place the .json file is saved. When you are there you can execute the commands below:
@@ -56,7 +58,11 @@ After these steps, I used Canny detection to find edges where minimum and maximu
 All results from this assignment are found in ```out/1```
 
 Below are a couple of results of the edge detection:
-![](../../examples/Arizona_letters.jpg)
-![](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729_letters.jpg)
+
+
+![Arizona_letters](../../examples/Alabama_letters.jpg)
+
+
+![Jefferson_letters](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729_letters.jpg)
 
 The choice of an automatic threshold in the canny edge detection had the consequence that some edges and text in some licenses were not captured (see e.g. the Georgia or Illinois license). Also, the cropping was done in a manual way in order to split up steps and demonstrate both the conversion to greyscale, blurring and edge detection. Also, the formats of We_Hold_These_Truths_at_Jefferson_Memorial_ and the car license plates respectively, had two very different dimensions and needed different cropping. Hovewer, if the script was to be further developed, it would be beneficial to find ways to crop images more automatically so it would not need modifications when introduced to new images.  
