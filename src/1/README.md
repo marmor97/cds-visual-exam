@@ -8,8 +8,6 @@ In the script, you can use the original image or the data set from Kaggle contai
 Below is the image of Jefferson Memorial and afterwards, an example of a car license plate picture is given: 
 
 ![](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial.JPG)
-
-
 ![](../../examples/Alabama.jpg)
 
 The picture We_Hold_These_Truths_at_Jefferson_Memorial.JPG is in the repository. However, cefore you can access the car license data, you will need to create a kaggle API following the instructions here [https://github.com/Kaggle/kaggle-api#:~:text=To%20use%20the%20Kaggle%20API,file%20containing%20your%20API%20credentials]. When you have created an API and have a kaggle.json file, upload the file to worker02 if you are working there and move to the place the .json file is saved. When you are there you can execute the commands below:
