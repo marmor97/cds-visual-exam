@@ -1,11 +1,13 @@
-## Visual Analytics exam portfolio in Cultural Data Science on Aarhus University, 2021
+### Visual Analytics exam portfolio in Cultural Data Science on Aarhus University
+#### May 2021
+#### Marie Damsgaard Mortensen
+
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="examples/Aarhus_University.png" alt="Logo" width="343" height="170">
+    <img src="examples/aarhus-university.png" alt="Logo" width="400" height="200">
   </a>
     
-### Marie Damsgaard Mortensen
 
 ## Content
 
@@ -20,8 +22,6 @@ This portfolio consists of 4 projects - 3 class assignments made throughout the 
 | 3 | Impressionist artist classification with fully-connected and pre-trained Neural Network |
 | 4 | Detecting architectural patterns with ResNet50 |
     
-</details>
-
 
 ## Structure
 
