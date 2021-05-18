@@ -1,9 +1,10 @@
 ## Visual Analytics exam portfolio in Cultural Data Science on Aarhus University, 2021
 
 <p align="center">
-  <![](examples/Aarhus_University.png)>
-</p>
-
+  <a href="https://github.com/marmor97/cds-visual-exam">
+    <img src="examples/Aarhus_University.png" alt="Logo" width="343" height="170">
+  </a>
+    
 ### Marie Damsgaard Mortensen
 
 ## Content
@@ -72,9 +73,9 @@ Now you can move to any script in the src folder and execute it:
 ```
 # Running script in assignment 1 as an example - exchange with whatever script you wish to run
 
-cd src/1/ # Changing to src and assignment folder 
+cd src/{insert assignment number} # Changing to src and assignment folder 
 
-python3 edge_detection.py # Run script
+python3 {insert script name} # Run script
 ```
 
 To deactivate and remove the environment, the following commands need to be executed:
