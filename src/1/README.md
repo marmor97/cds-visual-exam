@@ -9,12 +9,12 @@ Below is the image of Jefferson Memorial and afterwards, an example of a car lic
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729.JPG" alt="Logo" width="400" height="200">
+    <img src="../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729.JPG" alt="jefferson" width="300" height="200">
   </a>
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../examples/Alabama.jpg" alt="Logo" width="400" height="200">
+    <img src="../../examples/Alabama.jpg" alt="alabama" width="300" height="200">
   </a>   
 
 
@@ -65,10 +65,15 @@ All results from this assignment are found in ```out/1```
 
 Below are a couple of results of the edge detection:
 
+<p align="center">
+  <a href="https://github.com/marmor97/cds-visual-exam">
+    <img src="../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729_letters.jpg" alt="jefferson" width="300" height="200">
+  </a>
 
-![Arizona_letters](../../examples/Alabama_letters.jpg)
+<p align="center">
+  <a href="https://github.com/marmor97/cds-visual-exam">
+    <img src="../../examples/Alabama_letters.jpg" alt="alabama" width="300" height="200">
+  </a>
 
-
-![Jefferson_letters](../../examples/We_Hold_These_Truths_at_Jefferson_Memorial_IMG_4729_letters.jpg)
 
 The choice of an automatic threshold in the canny edge detection had the consequence that some edges and text in some licenses were not captured (see e.g. the Georgia or Illinois license). Also, the cropping was done in a manual way in order to split up steps and demonstrate both the conversion to greyscale, blurring and edge detection. Also, the formats of We_Hold_These_Truths_at_Jefferson_Memorial_ and the car license plates respectively, had two very different dimensions and needed different cropping. Hovewer, if the script was to be further developed, it would be beneficial to find ways to crop images more automatically so it would not need modifications when introduced to new images.  
