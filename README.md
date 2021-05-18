@@ -1,6 +1,6 @@
-<h1 align="center">### Visual Analytics exam portfolio in Cultural Data Science on Aarhus University</h1>
-<h1 align="center">#### May 2021</h1>
-<h1 align="center">#### Marie Damsgaard Mortensen</h1>
+<h1 align="center"> Visual Analytics exam portfolio in Cultural Data Science on Aarhus University</h1>
+<h1 align="center"> May 2021</h1>
+<h1 align="center"> Marie Damsgaard Mortensen</h1>
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
