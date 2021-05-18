@@ -42,6 +42,9 @@ from tensorflow.keras.optimizers import SGD, Adam
 # Image processsing
 from tensorflow.keras.preprocessing.image import (load_img,
                                                   img_to_array)
+
+tf.keras.backend.clear_session()
+
 import cv2
 
 # Evaluation modules
@@ -74,7 +77,7 @@ class architectural_resnet50:
         # Set seeds
         seed=2021,
         # Alphanumeric order.
-        shuffle = False, 
+        shuffle = True, 
         # 80/20 split
         validation_split = 0.20,
         # What this set is
@@ -86,21 +89,25 @@ class architectural_resnet50:
         class_names = training_data.class_names
         
         # Normalize
-        normalization_layer = tf.keras.layers.experimental.preprocessing.Rescaling(1./255) # Defining normalization layer       
-        training_data = training_data.map(lambda x, y: (normalization_layer(x), y)) # Applying the above defined layer
+        # normalization_layer = tf.keras.layers.experimental.preprocessing.Rescaling(1./255) # Defining normalization layer       
+        # training_data = training_data.map(lambda x, y: (normalization_layer(x), y)) # Applying the above defined layer
 
-        # Validation                                                              
+        # Validation        
         validation_data = tf.keras.preprocessing.image_dataset_from_directory( 
         self.args['path'], 
         label_mode = 'categorical', 
         seed=2021,
-        shuffle = False, 
+        shuffle = True, 
         validation_split = 0.20,
         subset = "validation",
         image_size=(224, 224))
         
         # Normalize
-        validation_data = validation_data.map(lambda x, y: (normalization_layer(x), y)) # Applying the above defined layer
+        # validation_data = validation_data.map(lambda x, y: (normalization_layer(x), y)) # Applying the above defined layer
+        
+        training_data = tf.keras.applications.resnet.preprocess_input(training_data)
+        
+        validation_data = tf.keras.applications.resnet.preprocess_input(validation_data)
         
         return training_data, validation_data, class_names
                
@@ -111,19 +118,6 @@ class architectural_resnet50:
         '''
         
         print("[INFO] Defining model...")
-
-        # Removing any saved state of the model
-        np.random.seed(1)
-        random.seed(2)
-        if tf.__version__[0] == '2':
-            tf.random.set_seed(3)
-        else:
-            tf.set_random_seed(3)
-        print("RANDOM SEEDS RESET")
- 
-        # del model
-        tf.keras.backend.clear_session()
-        tf.compat.v1.reset_default_graph()
 
         # Importing resnet50 with keras.applications 
         resnet50 = tf.keras.applications.ResNet50( 

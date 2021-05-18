@@ -80,10 +80,10 @@ These scores make it quite difficult to answer which model is best. While VGG16 
 
 Also, learning curves were saved and can be seen here:
 
-![](../../out/3/loss_accuracy_curve_non-pretrained.png)
-![](../../out/3/loss_accuracy_curve_pretrained.png)
+![](../../examples/CNN_model.png)
+![](../../examples/VGG16_model.png)
 
-When looking at the f-scores above we see a substantial difference between the CNN that is not pre-trained and the VGG16 model. In many cases, the accuracy is almost double as high , for example when classifying Matisse, Monet and Cezanne. In single cases, the two models have similar performance such as with Degas and Sargent.
+When looking at the f-scores above we see a substantial difference between the CNN that is not pre-trained (upper figure) and the VGG16 model (lower figure). In many cases, the accuracy is almost double as high , for example when classifying Matisse, Monet and Cezanne. In single cases, the two models have similar performance such as with Degas and Sargent.
 
 The VGG16, however, seems to slightly overfit the data when looking at the learning curves above. 
 The loss curves are moving in diverging directions from the point of four epochs. The accuracies separate to a lesser extent and and follow more steadily to reach between 65 % and 80 % accuracy. Overfitting is also the case is different for the non-pretrained model. We see that both losses and accuracies reach a point of inflection before reaching five epochs. Furthermore, the validation loss has noisy movements in both models which could suggest that the validation set is too small or unrepresentative. These observations might indicate that the VGG16 model has the best potential to generalize of the two models considering the higher accuracies and that it is less overfit than the CNN.  

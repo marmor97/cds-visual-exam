@@ -1,4 +1,9 @@
 ## Visual Analytics exam portfolio in Cultural Data Science on Aarhus University, 2021
+
+<p align="center">
+  <![](examples/Aarhus_University.png)>
+</p>
+
 ### Marie Damsgaard Mortensen
 
 ## Content
@@ -35,7 +40,7 @@ To familiarize yourself with the structure of the repository, please see the tab
 
 To see and run the code with the correct packages installed, please clone the GitHub repository to a place on your computer where you'd like to have it by typing:
 
-MAC / WORKER02
+#### MAC / WORKER02
 
 ```
 git clone https://github.com/marmor97/cds-visual-exam # Clone repository to local machine or server
@@ -45,7 +50,7 @@ cd cds-visual-exam # Change directory to the repository folder
 bash create_vision_venv.sh # Creates a virtual environment
 ```
 
-WINDOWS
+#### WINDOWS
 
 ```
 git clone https://github.com/marmor97/cds-visual-exam # Clone repository to local machine or server

@@ -47,6 +47,8 @@ In this script, you will not need to download any data as it is automatically do
 
 '--output_path' help = "Path location of classification report"
 
+
+Below is an example of how to move and execute the scripts from the commandline:
 ```
 cd src/2 # Move to the folder containing the scripts
 
@@ -57,7 +59,8 @@ python3 nn_mnist.py # Execute the script running the neural network
 
 ### Preprocessing: 
 
-In both scripts the data was imported through fetch_openml whereafter they were split into X and y-values, normalized and binarized. Afterwards the classifier was defined and fit to the data and from these results, a classification report was produced.
+In both scripts the data was imported through fetch_openml whereafter they were split into X and y-values, min-max normalized and binarized with LabelBinarizer(). Afterwards the classifier was defined and fit to the data and from these results, a classification report was produced. The models can be saved using pickle in the logistic regression and numpy.save in the neural network. To predict a new picture, it is loaded into the script and turned into greyscale whereafter we use the trained model to predict its class. This prediction is printed in the terminal. 
+  
 
 ### Results and discussion
 

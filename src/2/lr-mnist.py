@@ -99,7 +99,7 @@ class lr_mnist:
         # Save the model
         if self.args['saving_mode'] == 'Yes':
             path = self.args['model_path']
-            filename = f'{path}trained_model.sav' # Combining filename defined in commandline argument and 'trained model' with formatted strings
+            filename = f'{path}trained_model_lr.sav' # Combining filename defined in commandline argument and 'trained model' with formatted strings
             pickle.dump(self.clf, open(filename, 'wb')) # Using pickle to save the model at the defined location
             
 

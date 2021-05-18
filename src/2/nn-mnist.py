@@ -90,9 +90,7 @@ class nn_mnist:
         # Numpy array
         layers = np.array(layers) 
        
-        
-        print(layers)
-                
+                        
         # Defining the classifier with the layers above
         self.nn = NeuralNetwork(layers) 
 
@@ -140,7 +138,7 @@ class nn_mnist:
             # Applying COLOR_BGR2GRAY to make the test image greyscale
             gray = cv2.bitwise_not(cv2.cvtColor(test_image, cv2.COLOR_BGR2GRAY))
             
-            # Compressing the size of the test image into a smaller 28x28 pixel format
+            # Compressing the size of the test image into a smaller pixel format
             compressed = cv2.resize(gray, (784, 33), interpolation=cv2.INTER_AREA) 
             
             # Predicting the class of the unseen image
