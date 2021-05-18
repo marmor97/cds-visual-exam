@@ -90,12 +90,12 @@ Also, learning curves were saved and can be seen here:
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../out/3/loss_accuracy_curve_non-pretrained.png" alt="Logo" width="300" height="500">
+    <img src="../../out/3/loss_accuracy_curve_non-pretrained.png" alt="Logo" width="500" height="600">
   </a>
     
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../out/3/loss_accuracy_curve_pretrained.png" alt="Logo" width="300" height="500">
+    <img src="../../out/3/loss_accuracy_curve_pretrained.png" alt="Logo" width="500" height="600">
   </a>
     
 When looking at the f-scores above we see a substantial difference between the CNN that is not pre-trained (upper figure) and the VGG16 model (lower figure). In many cases, the accuracy is almost double as high , for example when classifying Matisse, Monet and Cezanne. In single cases, the two models have similar performance such as with Degas and Sargent.
