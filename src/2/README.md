@@ -1,4 +1,4 @@
-Classifier benchmarks using Logistic Regression and a Neural Network
+## Classifier benchmarks using Logistic Regression and a Neural Network
 
 In this assignment, I will create two command-line tools which can be used to perform a simple classification task on the MNIST data and print the output to the terminal. These scripts can then be used to provide easy-to-understand benchmark scores for evaluating these models.
 
@@ -8,12 +8,13 @@ In both scripts, it is possible to save the trained model and test the model on 
 
 ![](../../data/2/self_drawn_digit.png) 
 
-Data: In this script, you will not need to download any data as it is automatically downloaded through the fetch_openml() function.
+### Data: 
+In this script, you will not need to download any data as it is automatically downloaded through the fetch_openml() function.
 
 
-Commandline arguments:
+### Commandline arguments:
 
-Logistic Regression script:
+#### Logistic Regression script:
 
 ‘--test_split_value’, help = "Test size of dataset"
  
@@ -30,7 +31,7 @@ Logistic Regression script:
 '--output_path', help = "Path location of classification report") 
 
 
-Neural Network script:
+#### Neural Network script:
 
 ‘--test_split_value’, help = "Test size of dataset"
 
@@ -47,16 +48,18 @@ Neural Network script:
 '--output_path' help = "Path location of classification report"
 
 ```
-cd src/2
+cd src/2 # Move to the folder containing the scripts
 
-python3 lr_mnist.py 
+python3 lr_mnist.py # Execute the script running the logistic regression
 
-python3 nn_mnist.py 
+python3 nn_mnist.py # Execute the script running the neural network
 ```
 
-Preprocessing: in both scripts the data was imported through fetch_openml whereafter they were split into X and y-values, normalized and binarized. Afterwards the classifier was defined and fit to the data and from these results, a classification report was produced.
+### Preprocessing: 
 
-Results
+In both scripts the data was imported through fetch_openml whereafter they were split into X and y-values, normalized and binarized. Afterwards the classifier was defined and fit to the data and from these results, a classification report was produced.
+
+### Results and discussion
 
 All results from this assignment are found in ```out/2```
 

@@ -69,8 +69,8 @@ class lr_mnist:
         '''
         This function defines the classifier used in the script, in this case a Logistic Regression classifier. 
         '''
-        self.clf = LogisticRegression(self.args['penalty'], # No penalty applied. Here you could have added either L1, L2 or elastic net as a penalization method
-                             self.args['tolerance'], # Tolerance for stopping criteria.
+        self.clf = LogisticRegression(penalty = self.args['penalty'], # No penalty applied. Here you could have added either L1, L2 or elastic net as a penalization method
+                             tol = self.args['tolerance'], # Tolerance for stopping criteria.
                              solver=self.args['solver'], # 'Saga' is the algorithm used in the optimization problem to help the model converge. Saga both supports multiclass problems and works well with large data sets
                              multi_class='multinomial').fit(self.X_train, self.y_train) # Class is multinumial because the classification task is not binary
 
@@ -89,7 +89,7 @@ class lr_mnist:
         print(report)
         
         report.to_csv(self.args['output_path'])
-        print(f'[INFO] report is saved in {self.args['output_path']}')
+        print(f'[INFO] report is saved in {self.args["output_path"]}')
     
 
     def save_model(self):
