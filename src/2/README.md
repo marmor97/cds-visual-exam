@@ -6,8 +6,11 @@ One python script takes the full MNIST data set, trains a Logistic Regression Cl
 
 In both scripts, it is possible to save the trained model and test the model on your own 'handwritten' digit image. You can draw one online here https://drawisland.com/. I have provided a default image shown below: 
 
-![](../../data/2/self_drawn_digit.png) 
-
+<p align="center">
+  <a href="https://github.com/marmor97/cds-visual-exam">
+    <img src="../../data/2/self_drawn_digit.png" alt="Logo" width="400" height="200">
+  </a>
+    
 ### Data: 
 In this script, you will not need to download any data as it is automatically downloaded through the fetch_openml() function.
 
