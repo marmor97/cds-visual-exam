@@ -1,6 +1,6 @@
 <h1 align="center"> Visual Analytics exam portfolio in Cultural Data Science on Aarhus University</h1>
-<h1 align="center"> May 2021</h1>
 <h1 align="center"> Marie Damsgaard Mortensen</h1>
+<h1 align="center"> May 2021</h1>
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
@@ -8,11 +8,9 @@
   </a>
     
 
-## Content
+## :open_book: Content 
 
 This portfolio consists of 4 projects - 3 class assignments made throughout the semester (number 1-3) and 1 self-assigned (number 4). 
-
-## Assignments
 
 | Assignment | Description|
 |--------|:-----------|
@@ -22,7 +20,7 @@ This portfolio consists of 4 projects - 3 class assignments made throughout the 
 | 4 | Detecting architectural patterns with ResNet50 |
     
 
-## Structure
+## :file_folder: Structure
 
 To familiarize yourself with the structure of the repository, please see the table below that describes the main folders: 
 
@@ -35,7 +33,7 @@ To familiarize yourself with the structure of the repository, please see the tab
 | examples | examples of pictures etc used in README's |
 
 
-## 🔧 Setup
+## :wrench: Setup
 
 
 To see and run the code with the correct packages installed, please clone the GitHub repository to a place on your computer where you'd like to have it by typing:
@@ -86,10 +84,10 @@ bash kill_vision_venv.sh
 ```
 
 
-## License
+## :woman_technologist: License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-## ❓ Questions and contact  
+## :question: Questions and contact  
 For questions and other inquiries, please contact me on mariemortensen97@gmail.com.
