@@ -54,14 +54,14 @@ In the non-pretrained CNN, every image is resized and saved as an array inside a
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../examples/CNN_model.png" alt="Logo" width="200" height="400">
+    <img src="../../examples/CNN_model.png" alt="Logo" width="300" height="400">
   </a>
 
 As the pre-trained classifier uses a different input format and does not take arrays of images, the data is loaded using the function image_dataset_from_directory from keras where multiple parameters are defined and the dataset is loaded as a BatchDataset. Here, the target size is also defined as 224x224 as this is what VGG16 is trained on. We also define a batch size of 128. This means that the data is grouped into batches leading to a faster process of model fitting. As mentioned above, values were also normalized. Afterwards, the VGG16 model is instantiated and loaded. We apply some different changes to the model: we define that it should not include the top layers so we can train our own, we define an 'average' pooling layer and we say that every layer in the model can not be retrained. Before we compile the model, we set the architecture of the last part of the model. This final architecture includes a flattening layer, a fully-connected layer and an output layer with a 'rectified linear unit' (relu) and a 'softmax' activation function, respectively. Below is a summary of the model architecture:
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../examples/VGG16_model.png" alt="Logo" width="200" height="400">
+    <img src="../../examples/VGG16_model.png" alt="Logo" width="400" height="500">
   </a>
     
 ![pretrained](.../../out/3/modelsummary_pretrained.txt)
@@ -90,12 +90,12 @@ Also, learning curves were saved and can be seen here:
 
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../out/3/loss_accuracy_curve_non-pretrained.png" alt="Logo" width="500" height="600">
+    <img src="../../out/3/loss_accuracy_curve_non-pretrained.png" alt="Logo" width="300" height="400">
   </a>
     
 <p align="center">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../out/3/loss_accuracy_curve_pretrained.png" alt="Logo" width="500" height="600">
+    <img src="../../out/3/loss_accuracy_curve_pretrained.png" alt="Logo" width="300" height="400">
   </a>
     
 When looking at the f-scores above we see a substantial difference between the CNN that is not pre-trained (upper figure) and the VGG16 model (lower figure). In many cases, the accuracy is almost double as high , for example when classifying Matisse, Monet and Cezanne. In single cases, the two models have similar performance such as with Degas and Sargent.
