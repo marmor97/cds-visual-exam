@@ -70,18 +70,18 @@ With this model, we see accuracies reaching 18.35 % at the 10th epoch. This is f
 The barplot above displays the predicted probabilities of the new image. They are very low (few reach even five percent) and reflect that the model is lacking training time. The highest predicted class is Greek Revival Architecture which is not representative as the Guggenheim Museum is Deconstructivism. It would be interesting to see how probabilities changed with more training time.
 
 <p align="left">
-    <img src="../../out/4/resnet50_learning_curves.jpg" alt="Logo" width="400" height="500">
+    <img src="../../out/4/resnet50_learning_curves.jpg" alt="Logo" width="300" height="300">
   <p>
 
 <p align="left">
-    <img src="../../out/4/new_pic_bplot.jpg" alt="Logo" width="400" height="500">
+    <img src="../../out/4/new_pic_bplot.jpg" alt="Logo" width="300" height="300">
   <p>
 
 
 In the collection of heatmaps seen below, there are a couple of things to highlight. In most instances, the important features are somewhere on the building; sometimes it is a rather large part of the building (e.g. Byzantine architecture) compared to other times (e.g. International style). One could argue that the features that are highlighted, differ across styles. In Deconstructivism and Georgian Architecture, the entrance seems to be a quite informative feature whereas more emphasis is placed on the middle areas of the buildings in Art Deco architecture and International style. However, it is limited how much one can 'trust' these maps, when accuries are not higher. One can also question the representativity of the maps, when they are made on single images from each style. This problem could maybe be solved by taking the mean values of heatmaps of all pictures within one style - but it is difficult to choose which image to superimpose it with then.
 
 <p align="left">
-    <img src="../../out/4/style_heatmaps_plot.jpg" alt="Logo" width="400" height="500">
+    <img src="../../out/4/style_heatmaps_plot.jpg" alt="Logo" width="500" height="500">
   <p>
 
 In the collection of heatmaps seen below, there are a couple of things to highlight. In most instances, the important features are somewhere on the building; sometimes it is a rather large part of the building (e.g. Byzantine architecture) compared to other cases (e.g. International style). One could argue that the features that are highlighted, differ across styles. In Deconstructivism and Georgian Architecture, the entrance seems to be a quite informative feature whereas more emphasis is placed on the middle areas of the buildings in Art Deco architecture and International style. However, it is limited how much one can 'trust' these maps, when accuries are not higher. One can also question the representativity of the maps, when they are made on single images from each style. This problem could maybe be solved by taking the mean values of heatmaps of all pictures within one style - but it is difficult to choose which image to superimpose it with then. In summary, the model is not very useful or applicable at the moment but has potential if it is dealt with in depth.
