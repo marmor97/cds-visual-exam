@@ -249,12 +249,12 @@ def main():
     ap.add_argument('-t',
                     '--train',
                     help='str, path for training data', 
-                    default = os.path.join("..","..","data","3","training")) 
+                    default = os.path.join("..","..","data","3","training", "training")) 
     # Validation folder
     ap.add_argument('-val',
                     '--validation',
                     help='str, path for validation data', 
-                    default = os.path.join("..","..","data","3","validation")) 
+                    default = os.path.join("..","..","data","3","validation", "validation")) 
     
     ap.add_argument('-o',
                     '--outpath',
