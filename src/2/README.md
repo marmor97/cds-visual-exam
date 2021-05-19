@@ -1,5 +1,7 @@
 ## Classifier benchmarks using Logistic Regression and a Neural Network
 
+#### Assignment 4
+
 In this assignment, I will create two command-line tools which can be used to perform a simple classification task on the MNIST data and print the output to the terminal. These scripts can then be used to provide easy-to-understand benchmark scores for evaluating these models.
 
 One python script takes the full MNIST data set, trains a Logistic Regression Classifier, and prints the evaluation metrics to the terminal.The other python script takes the full MNIST dataset, trains a neural network classifier, and prints the evaluation metrics to the terminal.

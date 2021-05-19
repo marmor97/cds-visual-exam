@@ -1,5 +1,7 @@
 ## Edge detection with CV2 
 
+#### Assignment 3
+
 This assignment deals with edge detection of pictures containing text. The script can both detect edges on the original image We_Hold_These_Truths_at_Jefferson_Memorial used in the assignment as well as other image datasets. 
 
 ### Data:
@@ -56,7 +58,7 @@ python3 edge_detection.py -condition 'Memorial' # Execute script with Jefferson 
 ```
 
 ### Preprocessing: 
-A couple of preprocessing steps are needed to achieve an edge detected image. This involves cropping, conversion to greyscale and blurring. To crop the image, I used the dimensions of the images to take 0.5*1/6 as minimum value and 5.5*1/6 as the max value of the width. I used the same approach with height and this resulted in an image containing almost exclusively text. The color-space of image was converted to greyscale with cvtColor and the colorspace COLOR_BGR2GRAY. The images were blurred to reduce noice using a Gaussian filter with a kernel size of 5x5. 
+A couple of preprocessing steps are needed to achieve an edge detected image. This involves cropping, conversion to grayscale and blurring. To crop the images, I used different values of the pictures dependent on the condition. Within the “Memorial” condition, I used the dimensions of the images to crop Width/4 until 3xWidth/4 and Height/4 until 4xHeight/4. In the “Cars” condition 0.5xWidth/6 as minimum value and 5.5xWidth/6  max value of the width to crop. I used the same approach with height, but with the values Height/6 and 5.5xHeight/6, instead. This resulted in images containing almost exclusively text. The color-space of the image was converted to greyscale with cvtColor and the colorspace COLOR_BGR2GRAY. The images were blurred to reduce noise using a Gaussian filter with a kernel size of 5x5. After these steps, I used Canny detection to find edges where minimum and maximum values were found automatically using numPy based on the distribution of pixel values in the picture. Min values were defined as the 5% lower percentile of the pixel values and max was defined as the 95% percentile.
 
 After these steps, I used Canny detection to find edges where minimum and maximum values were found automatically using numPy based on the distribution of pixel values in the picture. Min value were defined as the 5% lower percentile of the pixel values and max was defined as the 95% percentile. 
 

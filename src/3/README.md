@@ -1,4 +1,7 @@
+## Impressionist painter classification
 This project deals with a multi-class classification of impressionist painters. It further attempts to test a Convolutional Neural Network (CNN) that has not been pretrained against one that has (VGG16)
+
+#### Assignment 3
 
 ### Data:
 
