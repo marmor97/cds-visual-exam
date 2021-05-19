@@ -60,7 +60,7 @@ The model is fit with 10 epochs and batch size of 256. Predictions are gathered 
 To generate the heatmaps projected onto the original images, the method Gradient-weighted Class Activation Mapping (Grad-CAM) is used. This takes the last convolutional layer and the strongest predicted class and uses the gradients of the picture in this layer to see which areas are highlighted and informative in the specific case (Selvaraju, Cogswell, Das, Vedantam, Parikh,& Batra, 2017). In my project, I am sampling one image from each class, to see whether there are clear and different patterns across architectural styles. By looping through each sub-folder of "architectural-styles-dataset", a picture can be randomly sampled from each style. This picture is preprocessed in the same way as the unseen picture mentioned above, and afterwards the gradient and its intensities are collected and transformed into a heatmap. This map is resized to the dimensions of the original picture, 'un-normalized' by multiplying with 255 and added to the original image. These pictures are afterwards saved in a grid made with matplotlib in the output folder. 
 
 <p align="left">
-    <img src="../../data/4/unseen_img.jpg" alt="Logo" width="400" height="400">
+    <img src="../../data/4/unseen-img.jpeg" alt="Logo" width="400" height="400">
   <p>
 
 ### Results:
