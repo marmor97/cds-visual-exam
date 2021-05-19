@@ -51,9 +51,9 @@ unzip fifty-states-car-license-plates-dataset.zip # Unzip data
 ```
 cd src/1 # Move to folder with scripts
 
-python3 edge_detection.py -condition 'Cars' # Execute script with car license plates pictures
+python3 edge_detection.py --condition 'Cars' # Execute script with car license plates pictures
 
-python3 edge_detection.py -condition 'Memorial' # Execute script with Jefferson Memorial picture
+python3 edge_detection.py --condition 'Memorial' # Execute script with Jefferson Memorial picture
 
 ```
 

@@ -16,7 +16,11 @@ Now you can download the data directly from your terminal by moving to the folde
 ```
 # When you are at the 'start' of my repository (i.e. cds-visual-exam) you can type
 
-cd data/3 # Changing directory to the place the data should be saved.
+cd data # Changing directory 
+
+mkdir 3 # Create folder 
+
+cd 3 # Change directory to this folder
 
 kaggle datasets download -d  delayedkarma/impressionist-classifier-data # Download data
 
@@ -45,9 +49,9 @@ To run the scripts please type:
 ```
 cd src/3
 
-python3 cnn_artists.py -classifier 'non-pretrained'
+python3 cnn_artists.py --classifier 'non-pretrained'
 
-python3 cnn_artists.py -classifier 'pretrained'
+python3 cnn_artists.py --classifier 'pretrained'
 ```
 
 ### Preprocessing:
