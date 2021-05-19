@@ -81,7 +81,6 @@ To compare performance, f1-scores are extracted from both models and can be seen
 | Gauguin | 43 % / 67 %        |
 | Cezanne | 35 % / 67 %        |
 
-These scores make it quite difficult to answer which model is best. While VGG16 is good in some cases, for example Matisse, Hassam, Van Gogh, Monet, and Cezanne, the CNN has substantially higher performance in other cases. 
 
 Also, learning curves were saved and can be seen here:
 
