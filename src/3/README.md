@@ -52,14 +52,14 @@ Within the script, one can choose between the two classifiers and these have sli
 
 In the non-pretrained CNN, every image is resized and saved as an array inside a list and the label belonging to each image is also saved in another array. As the data is already divided into test/train splits, it is not done so in the script and the user cannot determine train and test sizes. Afterwards, all label values are subject to a one-hot encoding - here, the labels are transformed into vectors of 0 and 1, where the position of 1 indicates what the label is; for example, 0,1,0,0,0,0,0,0,0,0 could signify that the artist was Picasso and 0,0,0,0,0,0,0,0,0,1 could mean that it was VanGogh. As neural networks are trained faster when the data is normalized to a value between 0 and 1, all input pictures are divided with 255 as this is the maximum value a pixel can have. This is both in the non-pretrained and the VGG16 classifiers. Afterwards, the CNN structure, its input layer, hidden layers and output layers as well as activation functions were defined. Below is an image of the model architecture: 
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../examples/CNN_model.png" alt="Logo" width="300" height="400">
+    <img src="../../examples/CNN_model.png" alt="Logo" width="300" height="300">
   </a>
 
 As the pre-trained classifier uses a different input format and does not take arrays of images, the data is loaded using the function image_dataset_from_directory from keras where multiple parameters are defined and the dataset is loaded as a BatchDataset. Here, the target size is also defined as 224x224 as this is what VGG16 is trained on. We also define a batch size of 128. This means that the data is grouped into batches leading to a faster process of model fitting. As mentioned above, values were also normalized. Afterwards, the VGG16 model is instantiated and loaded. We apply some different changes to the model: we define that it should not include the top layers so we can train our own, we define an 'average' pooling layer and we say that every layer in the model can not be retrained. Before we compile the model, we set the architecture of the last part of the model. This final architecture includes a flattening layer, a fully-connected layer and an output layer with a 'rectified linear unit' (relu) and a 'softmax' activation function, respectively. Below is a summary of the model architecture:
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/marmor97/cds-visual-exam">
     <img src="../../examples/VGG16_model.png" alt="Logo" width="400" height="500">
   </a>
@@ -88,14 +88,14 @@ These scores make it quite difficult to answer which model is best. While VGG16 
 
 Also, learning curves were saved and can be seen here:
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../out/3/loss_accuracy_curve_non-pretrained.png" alt="Logo" width="300" height="400">
+    <img src="../../out/3/loss_accuracy_curve_non-pretrained.png" alt="Logo" width="300" height="300">
   </a>
     
-<p align="center">
+<p align="right">
   <a href="https://github.com/marmor97/cds-visual-exam">
-    <img src="../../out/3/loss_accuracy_curve_pretrained.png" alt="Logo" width="300" height="400">
+    <img src="../../out/3/loss_accuracy_curve_pretrained.png" alt="Logo" width="300" height="300">
   </a>
     
 When looking at the f-scores above we see a substantial difference between the CNN that is not pre-trained (upper figure) and the VGG16 model (lower figure). In many cases, the accuracy is almost double as high , for example when classifying Matisse, Monet and Cezanne. In single cases, the two models have similar performance such as with Degas and Sargent.
