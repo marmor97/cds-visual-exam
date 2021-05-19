@@ -66,16 +66,16 @@ To generate the heatmaps projected onto the original images, the method – Grad
 
 With this model, we see accuracies reaching 18.35 % at the 10th epoch. This is far from the results gathered in the original paper. When not thinking of the original paper, one could say that 18.35 % is quite good considering that there are 25 classes. On the other hand, when we use a pretrained model, we could maybe expect a little more. Despite these results, we see that it is not overfitting, and has decent loss and accuracy curves. If scope and time allowed it, the model should run for more epochs to see its full potential. Another implementation could be to expand the top layer. Currently, there are not many top layers in the network, and as the pre-trained layers can be considered more like feature extraction, the network could benefit from more layer allowing it to learn more patterns faster.
 
+<p align="left">
+    <img src="../../out/4/resnet50_learning_curves.jpg" alt="Logo" width="200" height="300">
+  <p>
+
+<p align="left">
+    <img src="../../out/4/new_pic_bplot.jpg" alt="Logo" width="300" height="200">
+  <p>
 
 The barplot above displays the predicted probabilities of the new image. They are very low (few reach even five percent) and reflect that the model is lacking training time. The highest predicted class is Greek Revival Architecture which is not representative as the Guggenheim Museum is Deconstructivism. It would be interesting to see how probabilities changed with more training time.
 
-<p align="left">
-    <img src="../../out/4/resnet50_learning_curves.jpg" alt="Logo" width="300" height="300">
-  <p>
-
-<p align="left">
-    <img src="../../out/4/new_pic_bplot.jpg" alt="Logo" width="300" height="300">
-  <p>
 
 
 In the collection of heatmaps seen below, there are a couple of things to highlight. In most instances, the important features are somewhere on the building; sometimes it is a rather large part of the building (e.g. Byzantine architecture) compared to other times (e.g. International style). One could argue that the features that are highlighted, differ across styles. In Deconstructivism and Georgian Architecture, the entrance seems to be a quite informative feature whereas more emphasis is placed on the middle areas of the buildings in Art Deco architecture and International style. However, it is limited how much one can 'trust' these maps, when accuries are not higher. One can also question the representativity of the maps, when they are made on single images from each style. This problem could maybe be solved by taking the mean values of heatmaps of all pictures within one style - but it is difficult to choose which image to superimpose it with then.
