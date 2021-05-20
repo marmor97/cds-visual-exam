@@ -28,7 +28,7 @@ To familiarize yourself with the structure of the repository, please see the tab
 | Folder | Description|
 |--------|:-----------|
 | data | contains data used in the analyses - inside this folder there it is specified how data for each assignment can be accessed |
-| src | source code and main scripts |
+| src | main scripts, methods description and discussion of results |
 | out | results (e.g. learning curves, classification reports, plots) |
 | utils | utility functions used in the scripts |
 | examples | examples of pictures etc used in README's |
